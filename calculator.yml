@@ -1,0 +1,30 @@
+provider:
+  name: faas
+  gateway: http://172.17.17.81:8080
+
+functions:
+  about:
+    lang: python
+    handler: ./about
+    image: alior/about-armhf
+
+  add:
+    lang: python
+    handler: ./add
+    image: alior/add-armhf
+
+  subtract:
+    lang: python
+    handler: ./subtract
+    image: alior/subtract-armhf
+
+  multiply:
+    lang: python
+    handler: ./multiply
+    image: alior/multiply-armhf
+
+  divide:
+    lang: python
+    handler: ./divide
+    image: alior/divide-armhf
+
